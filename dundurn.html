@@ -6,6 +6,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/dundurn.css">
+		<link rel="stylesheet" href="css/aos.css">
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/fontawesome.js"></script>
@@ -25,6 +27,18 @@
 			</u1>
 
 			<u1 class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#booking">Booking</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#doctors">Doctors</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="http://www.primacyclinics.ca/locations/dundurn/?fbclid=IwAR0yDOyGioF-Fwdoc9ohmNwsuFzZLKqJ7a8DWYtomNVEce7-EOw9hWZNSQA" target="_blank">
 						<i class="fa fa-globe" aria-hidden="true"></i>
@@ -89,34 +103,423 @@
 		</div>
 
 		<div class="row" id="about">
-		</div>
-		<div class="row">
-			<div class="shadow container-lg p-3 my-3 border">
-				<h2>
-					About us
-				</h2>
+			<div class="shadow container-lg p-3 my-3 border" data-aos="fade-up">
+				<p class="display-4">About us</p>
+
+				<div class="container-lg p-3 my-3">
+					<h5>The Dundurn Medical Centre Inc. operates as a family practice and a walk in clinic in Hamilton, ON</h5>
+					<br>
+					<h7>The Dundurn Medical Centre Inc. is committed to providing high quality, medical care in a clean and friendly environment with added convenience.</h7>
+					<br><br>
+					<h7>Our clinic provides both Family Practice and Walk-In style medical service where patients can be treated by a qualified health care team. We understand our patients’ needs and treat all with care and respect.</h7>
+					<br><br>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<h2>Services</h2>
+							<br>
+							<u1>
+								<li>Walk-In Medical Clinic</li>
+								<li>Travel Medicine Clinic</li>
+								<li>Sexual Health Clinic</li>
+								<li style="color:#7790ed;">Women’s PAP Clinic</li>
+								<li>Orthotics</li>
+							</u1>
+							<br>
+							<h7>Services provided in addition to general practice include:</h7>
+							<u1>
+								<li style="color:#7790ed;">Minor Surgical Procedures (Stitches)</li>
+								<li style="color:#7790ed;">Drivers Physical Exams</li>
+								<li>Family Planning</li>
+								<li>Wart Treatment – Liquid Nitrogen</li>
+								<li style="color:#7790ed;">Weekly PAP & STI Clinic’s</li>
+								<li>Immunization Updates (for patients with no GP)</li>
+								<li style="color:#7790ed;">Pre-op Exams</li>
+								<li>Travel Immunizations</li>
+								<li>Flu Shots/Allergy Shots</li>
+								<li>Orthotics</li>
+								<li>Sexual Health Clinic</li>
+							</u1>
+							<br>
+							<h7>Cardiology Consultation and Diagnostic Services</h7>
+							<u1>
+								<li style="color:#7790ed;">Cardiac Consultation, Echos, Holters, ECG’s</li>
+							</u1>
+							<br>
+						</div>
+
+						<div class="col-lg-6">
+							<h2>Policies</h2>
+							<br>
+							<u1>
+								<li>Walk in is available (no appointment necessary).</li>
+								<li>Hours are subject to change without notice.</li>
+							</u1>
+							<br>
+							<h7>All patients are required to produce a valid Provincial Health Card at the time of each visit, otherwise patients will be required to pay cash at the time of the visit.</h7>
+							<br><br>
+							<h7>*Highlighted services require an appointment.</h7>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div class="row"  id="booking">
-		</div>
-		<div class="row">
-			<div class="shadow container-lg p-3 my-3 border">
-				<h2>
-					Book an appointment
-				</h2>
+		<div class="row" id="booking">
+			<div class="shadow container-lg p-3 my-3 border" data-aos="fade-up">
+				<p class="display-4">Book an appointment</p>
+
+				<div class="container-lg p-3 my-3">
+					<form>
+						<h2>About you</h2>
+						<br>
+
+						<h7>I am a new patient *</h7>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio1">
+								  <label class="form-check-label" for="inlineRadio1">Yes</label>
+								</div>
+								<div class="form-check form-check-inline">
+								  <input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio2">
+								  <label class="form-check-label" for="inlineRadio2">No</label>
+								</div>
+							</div>
+						</div>
+						<br>
+
+						<h7>Is the patient a child? (under 18) *</h7>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio3">
+									<label class="form-check-label" for="inlineRadio3">Yes</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio4">
+									<label class="form-check-label" for="inlineRadio4">No</label>
+								</div>
+							</div>
+						</div>
+						<br>
+
+						<div class="row">
+							<div class="col-lg-6">
+							  <div class="form-group">
+									<label for="inputFirst">First Name *</label>
+							    <input type="text" class="form-control" placeholder="Your first name" id="inputFirst">
+							  </div>
+							</div>
+
+							<div class="col-lg-6">
+							  <div class="form-group">
+									<label for="inputLast">Last Name *</label>
+							    <input type="text" class="form-control" placeholder="Your last name" id="inputLast">
+							  </div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="inputPhone1">Phone number *</label>
+									<input type="tel" class="form-control" placeholder="Your phone number" id="inputPhone">
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="inputEmail">Email address *</label>
+									<input type="email" class="form-control" placeholder="Your email address" id="inputEmail">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="FormControlTextarea1">Additional Information</label>
+							<textarea class="form-control" id="FormControlTextarea1" rows="3" placeholder="Any additional information you think would be needed"></textarea>
+						</div>
+						<br>
+
+						<h2>About your appointment</h2>
+						<br>
+
+						<h7>Reason for visit *</h7>
+						<div class="row">
+							<div class="col-lg-12">
+								<select class="form-control">
+								  <option>Choose an option</option>
+									<option>Abrasions / Bruises / Cut</option>
+									<option>Allergies / Itchy Eyes</option>
+									<option>Anxiety / Depression</option>
+									<option>Acne / Skin Rash</option>
+									<option>Muscle and Body Aches</option>
+									<option>Cold / Flu / Cough</option>
+									<option>Stomach / Vomiting / Diarrhea</option>
+									<option>Headaches / Migraines</option>
+									<option>Medication Refills</option>
+									<option>Pink Eye</option>
+									<option>STI</option>
+									<option>UTI</option>
+									<option>Other reason</option>
+								</select>
+							</div>
+						</div>
+						<br>
+
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label for="FormControlTextarea2">Additional Information</label>
+									<textarea class="form-control" id="FormControlTextarea2" rows="3" placeholder="Any additional information you think would be needed"></textarea>
+								</div>
+							</div>
+						</div>
+						<br>
+
+						<h2>Pharmacy details</h2>
+						<br>
+
+						<h7>Where do you want your prescription? *</h7>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-check">
+								  <input class="form-check-input" type="radio" name="radioOptions3" id="Radios1">
+								  <label class="form-check-label" for="Radios1">Delivery within 24 hours</label>
+								</div>
+								<div class="form-check">
+								  <input class="form-check-input" type="radio" name="radioOptions3" id="Radios2">
+								  <label class="form-check-label" for="Radios2">Forwarded to preferred pharmacy</label>
+								</div>
+							</div>
+						</div>
+						<br>
+
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label for="inputPharmacy">Preferred Pharmacy</label>
+									<input type="text" class="form-control" placeholder="Pharmacy of preference" id="inputPharmacy">
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="inputPhone2">Phone number</label>
+									<input type="tel" class="form-control" placeholder="Phone number" id="inputPhone2">
+								</div>
+							</div>
+
+							<div class="col-lg-6">
+								<div class="form-group">
+									<label for="inputFax">Fax Number</label>
+									<input type="tel" class="form-control" placeholder="Fax Number" id="inputFax">
+								</div>
+							</div>
+						</div>
+						<br>
+
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<label for="inputAddress">Full address</label>
+									<textarea class="form-control" id="inputAddress" rows="3" placeholder="Pharmacy of preference address"></textarea>
+								</div>
+							</div>
+						</div>
+
+					</form>
+				</div>
+
 			</div>
 		</div>
 
 		<div class="row" id="doctors">
-		</div>
-		<div class="row">
-			<div class="shadow container-lg p-3 my-3 border">
-				<h2>
-					Our Doctors
-				</h2>
+			<div class="shadow container-lg p-3 my-3 border" data-aos="fade-up">
+				<p class="display-4">Our Doctors</p>
+
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card" style="width: 18rem;">
+						  <img class="card-img-top" src="assets/Doctors/Doctor1.jpg" alt="Card image cap">
+						  <div class="card-body">
+						    <h5 class="card-title">Dr. Sim Bhular</h5>
+						    <p class="card-text">Primary Care Physician</p>
+						    <a href="#" class="btn btn-custom">Learn More</a>
+						  </div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="assets/Doctors/Doctor2.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Dr. Lebron James</h5>
+								<p class="card-text">Cardiologist, PhD.</p>
+								<a href="#" class="btn btn-custom">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="assets/Doctors/Doctor3.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Dr. Doris Burke</h5>
+								<p class="card-text">General Practisioner</p>
+								<a href="#" class="btn btn-custom">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="assets/Doctors/Doctor4.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Dr. Molly Qerim</h5>
+								<p class="card-text">Pediatrician</p>
+								<a href="#" class="btn btn-custom">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="assets/Doctors/Doctor5.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Dr. Joy Taylor</h5>
+								<p class="card-text">Dermatologist, PhD.</p>
+								<a href="#" class="btn btn-custom">Learn More</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4">
+						<div class="card" style="width: 18rem;">
+							<img class="card-img-top" src="assets/Doctors/Doctor6.jpg" alt="Card image cap">
+							<div class="card-body">
+								<h5 class="card-title">Dr. Larry Bird</h5>
+								<p class="card-text">Neurologist</p>
+								<a href="#" class="btn btn-custom">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
+		<div class="row" id="contact">
+			<div class="col-md-12">
+				<div class="container-lg p-3 my-3">
+					<p class="display-4">Contact</p>
+				</div>
+
+				<div class="container-lg p-3 my-3">
+					<div class="row">
+						<div class="col-lg-5">
+
+							<div class="row">
+								<div class="col-lg-2">
+									<a class="nav-link" href="tel:9055294040" class="right">
+										<i class="fa fa-phone" aria-hidden="true"></i>
+									</a>
+								</div>
+								<div class="col-lg-10">
+									<p>(905) 529-4040</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-2">
+									<a class="nav-link" href="tel:9055294494" class="right">
+										<i class="fa fa-fax" aria-hidden="true"></i>
+									</a>
+								</div>
+								<div class="col-lg-10">
+									<p>(905) 529-4494</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-2">
+									<a class="nav-link" href="https://goo.gl/maps/g9mbkMpzp9PYZpiV9" target="_blank" class="right">
+										<i class="fa fa-map-marker" aria-hidden="true"></i>
+									</a>
+								</div>
+								<div class="col-lg-10">
+									<h7>50 Dundun Street South Hamilton, ON L8P 4W3</h7>
+									<p>Located on the ground floor beside the Fortinos</p>
+								</div>
+							</div>
+								<!--Google map-->
+							<div class="map-responsive">
+								 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5811.063837395763!2d-79.889257!3d43.261231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9b647a93c3d9%3A0x606b64e93b9a9713!2s50%20Dundurn%20St%20S%2C%20Hamilton%2C%20ON%20L8P%204W3%2C%20Canada!5e0!3m2!1sen!2sus!4v1595704572180!5m2!1sen!2sus"
+									frameborder="0" style="border:0" allowfullscreen=""></iframe>
+							</div>
+						</div>
+
+						<div class="col-lg-7">
+							<h4 style="text-align:center;">Hours of Operation</h4>
+							<table class="table">
+							  <thead>
+							    <tr>
+							      <th scope="col">Day</th>
+							      <th scope="col">From</th>
+							      <th scope="col">To</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th scope="row">Monday</th>
+							      <td>9 am</td>
+							      <td>9 pm</td>
+							    </tr>
+							    <tr>
+										<th scope="row">Tuesday</th>
+							      <td>9 am</td>
+							      <td>9 pm</td>
+							    </tr>
+							    <tr>
+										<th scope="row">Wednesday</th>
+							      <td>9 am</td>
+							      <td>9 pm</td>
+							    </tr>
+									<tr>
+										<th scope="row">Thursday</th>
+										<td>9 am</td>
+										<td>9 pm</td>
+									</tr>
+									<tr>
+										<th scope="row">Friday</th>
+										<td>9 am</td>
+										<td>9 pm</td>
+									</tr>
+									<tr>
+										<th scope="row">Saturday</th>
+										<td>10 am</td>
+										<td>6 pm</td>
+									</tr>
+									<tr>
+										<th scope="row">Sunday</th>
+										<td>10 am</td>
+										<td>6 pm</td>
+									</tr>
+							  </tbody>
+							</table>
+
+							<h6>*Holidays: 12:00 PM - 5:00 PM</h6>
+							<h6>*We are open every day of the year except Christmas Day!</h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/aos.js"></script>
 	</body>
 </html>

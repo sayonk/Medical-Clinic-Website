@@ -10,6 +10,7 @@ window.FontAwesomeKitConfig = {
     v4shim: { enabled: true },
     version: "latest",
 };
+
 !(function () {
     function r(e) {
         var t,
