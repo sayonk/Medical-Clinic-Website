@@ -69,7 +69,9 @@
 						<h1 class="display-1">Dundurn Medical Centre Inc.</h1>
 					</div>
 					<div class="carousel-caption">
-						<p class="display-6">Here for you.</p>
+						<p class="display-6">
+							<a href="#about">About us.</a>
+						</p>
 					</div>
 		    </div>
 		    <div class="carousel-item">
@@ -78,7 +80,9 @@
 						<h1 class="display-1">Booking</h1>
 					</div>
 					<div class="carousel-caption">
-						<p class="display-6">Book an appointment online.</p>
+						<p class="display-6">
+							<a href="#booking">Book an appointment online.</a>
+						</p>
 					</div>
 		    </div>
 		    <div class="carousel-item">
@@ -87,7 +91,9 @@
 						<h1 class="display-1">Our Doctors</h1>
 					</div>
 					<div class="carousel-caption">
-						<p class="display-6">Meet our staff!</p>
+						<p class="display-6">
+							<a href="#doctors">Meet our staff!</a>
+						</p>
 					</div>
 		    </div>
 		  </div>
@@ -170,69 +176,71 @@
 				<p class="display-4">Book an appointment</p>
 
 				<div class="container-lg p-3 my-3">
-					<form>
+
+					<form class="needs-validation" novalidate id="form" method="post" autocomplete="on">
 						<h2>About you</h2>
 						<br>
 
 						<h7>I am a new patient *</h7>
-						<div class="row">
-							<div class="col-lg-12">
+						<div class="form-row">
+							<div class="form-group col-lg-12">
 								<div class="form-check form-check-inline">
-								  <input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio1">
+								  <input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio1" required>
 								  <label class="form-check-label" for="inlineRadio1">Yes</label>
 								</div>
 								<div class="form-check form-check-inline">
-								  <input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio2">
+								  <input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio2" required>
 								  <label class="form-check-label" for="inlineRadio2">No</label>
 								</div>
+								<input type="radio" name="new" style="display:none;" required>
+								<div class="invalid-feedback">Please choose an option.</div>
 							</div>
 						</div>
 						<br>
 
 						<h7>Is the patient a child? (under 18) *</h7>
-						<div class="row">
-							<div class="col-lg-12">
+						<div class="form-row">
+							<div class="form-group col-lg-12">
 								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio3">
+									<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio3" required>
 									<label class="form-check-label" for="inlineRadio3">Yes</label>
 								</div>
 								<div class="form-check form-check-inline">
-									<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio4">
+									<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio4" required>
 									<label class="form-check-label" for="inlineRadio4">No</label>
 								</div>
+								<input type="radio" name="child" style="display:none;" required>
+								<div class="invalid-feedback">Please choose an option.</div>
 							</div>
+
 						</div>
 						<br>
 
-						<div class="row">
-							<div class="col-lg-6">
-							  <div class="form-group">
-									<label for="inputFirst">First Name *</label>
-							    <input type="text" class="form-control" placeholder="Your first name" id="inputFirst">
-							  </div>
+						<div class="form-row">
+							<div class="form-group col-lg-6">
+								<label for="fname">First name *</label>
+							  <input type="text" name="fname" class="form-control" placeholder="Your first name" id="fname" required>
+								<div class="invalid-feedback">Please enter your first name.</div>
 							</div>
 
-							<div class="col-lg-6">
-							  <div class="form-group">
-									<label for="inputLast">Last Name *</label>
-							    <input type="text" class="form-control" placeholder="Your last name" id="inputLast">
-							  </div>
+							<div class="form-group col-lg-6">
+								<label for="lname">Last name *</label>
+							  <input type="text" name="lname" class="form-control" placeholder="Your last name" id="lname" required>
+								<div class="invalid-feedback">Please enter your last name.</div>
 							</div>
 						</div>
 
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="form-group">
-									<label for="inputPhone1">Phone number *</label>
-									<input type="tel" class="form-control" placeholder="Your phone number" id="inputPhone">
-								</div>
+						<div class="form-row">
+							<div class="form-group col-lg-6">
+								<label for="phone">Phone number *</label>
+								<input type="tel" name="phone" pattern='^\+?\d{0,13}' class="form-control" placeholder="Your phone number" id="phone" required>
+								<div class="invalid-feedback">Please enter a valid phone number.</div>
 							</div>
 
-							<div class="col-lg-6">
-								<div class="form-group">
-									<label for="inputEmail">Email address *</label>
-									<input type="email" class="form-control" placeholder="Your email address" id="inputEmail">
-								</div>
+							<div class="form-group col-lg-6">
+								<label for="email">Email address *</label>
+								<input type="email" name="email" class="form-control" placeholder="Your email address" id="email" required>
+								<div class="invalid-feedback">Please enter a valid email address.</div>
 							</div>
 						</div>
 
@@ -246,34 +254,33 @@
 						<br>
 
 						<h7>Reason for visit *</h7>
-						<div class="row">
-							<div class="col-lg-12">
-								<select class="form-control">
-								  <option>Choose an option</option>
-									<option>Abrasions / Bruises / Cut</option>
-									<option>Allergies / Itchy Eyes</option>
-									<option>Anxiety / Depression</option>
-									<option>Acne / Skin Rash</option>
-									<option>Muscle and Body Aches</option>
-									<option>Cold / Flu / Cough</option>
-									<option>Stomach / Vomiting / Diarrhea</option>
-									<option>Headaches / Migraines</option>
-									<option>Medication Refills</option>
-									<option>Pink Eye</option>
-									<option>STI</option>
-									<option>UTI</option>
-									<option>Other reason</option>
+						<div class="form-row">
+							<div class="form-group col-lg-12">
+								<select class="form-control custom-select" required>
+								  <option value="">Choose an option</option>
+									<option value=1>Abrasions / Bruises / Cut</option>
+									<option value=2>Allergies / Itchy Eyes</option>
+									<option value=3>Anxiety / Depression</option>
+									<option value=4>Acne / Skin Rash</option>
+									<option value=5>Muscle and Body Aches</option>
+									<option value=6>Cold / Flu / Cough</option>
+									<option value=7>Stomach / Vomiting / Diarrhea</option>
+									<option value=8>Headaches / Migraines</option>
+									<option value=9>Medication Refills</option>
+									<option value=10>Pink Eye</option>
+									<option value=11>STI</option>
+									<option value=12>UTI</option>
+									<option value=13>Other reason</option>
 								</select>
+								<div class="invalid-feedback">Please choose an option.</div>
 							</div>
 						</div>
 						<br>
 
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="form-group">
-									<label for="FormControlTextarea2">Additional Information</label>
-									<textarea class="form-control" id="FormControlTextarea2" rows="3" placeholder="Any additional information you think would be needed"></textarea>
-								</div>
+						<div class="form-row">
+							<div class="form-group col-lg-12">
+								<label for="FormControlTextarea2">Additional Information</label>
+								<textarea class="form-control" id="FormControlTextarea2" rows="3" placeholder="Any additional information you think would be needed"></textarea>
 							</div>
 						</div>
 						<br>
@@ -282,53 +289,58 @@
 						<br>
 
 						<h7>Where do you want your prescription? *</h7>
-						<div class="row">
-							<div class="col-lg-12">
+						<div class="form-row">
+							<div class="form-group col-lg-12">
 								<div class="form-check">
-								  <input class="form-check-input" type="radio" name="radioOptions3" id="Radios1">
+								  <input class="form-check-input" type="radio" name="radioOptions3" id="Radios1" required value=1>
 								  <label class="form-check-label" for="Radios1">Delivery within 24 hours</label>
 								</div>
 								<div class="form-check">
-								  <input class="form-check-input" type="radio" name="radioOptions3" id="Radios2">
+								  <input class="form-check-input" type="radio" name="radioOptions3" id="Radios2" required value=2>
 								  <label class="form-check-label" for="Radios2">Forwarded to preferred pharmacy</label>
+									<div class="invalid-feedback">Please choose an option.</div>
 								</div>
 							</div>
 						</div>
 						<br>
 
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="form-group">
+						<div id="pharmacy">
+							<div class="form-row">
+								<div class="form-group col-lg-12">
 									<label for="inputPharmacy">Preferred Pharmacy</label>
 									<input type="text" class="form-control" placeholder="Pharmacy of preference" id="inputPharmacy">
 								</div>
 							</div>
-						</div>
 
-						<div class="row">
-							<div class="col-lg-6">
-								<div class="form-group">
+							<div class="form-row">
+								<div class="form-group col-lg-6">
 									<label for="inputPhone2">Phone number</label>
-									<input type="tel" class="form-control" placeholder="Phone number" id="inputPhone2">
+									<input type="tel" pattern='^\+?\d{0,13}' class="form-control" placeholder="Phone number" id="inputPhone2">
+									<div class="invalid-feedback">Please enter a valid phone number.</div>
 								</div>
-							</div>
 
-							<div class="col-lg-6">
-								<div class="form-group">
+								<div class="form-group col-lg-6">
 									<label for="inputFax">Fax Number</label>
-									<input type="tel" class="form-control" placeholder="Fax Number" id="inputFax">
+									<input type="tel" pattern='^\+?\d{0,13}' class="form-control" placeholder="Fax Number" id="inputFax">
+									<div class="invalid-feedback">Please enter a valid phone number.</div>
 								</div>
 							</div>
-						</div>
-						<br>
+							<br>
 
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="form-group">
+							<div class="form-row">
+								<div class="form-group col-lg-12">
 									<label for="inputAddress">Full address</label>
 									<textarea class="form-control" id="inputAddress" rows="3" placeholder="Pharmacy of preference address"></textarea>
 								</div>
 							</div>
+							<br>
+						</div>
+
+						<button type="submit" class="btn btn-custom">Send my appointment request</button>
+
+						<div id="space"></div>
+						<div id="messages" class="hide" role="alert">
+							<div id="messages_content"></div>
 						</div>
 
 					</form>
@@ -474,37 +486,37 @@
 							    </tr>
 							  </thead>
 							  <tbody>
-							    <tr>
+							    <tr id="Monday">
 							      <th scope="row">Monday</th>
 							      <td>9 am</td>
 							      <td>9 pm</td>
 							    </tr>
-							    <tr>
+							    <tr id="Tuesday">
 										<th scope="row">Tuesday</th>
 							      <td>9 am</td>
 							      <td>9 pm</td>
 							    </tr>
-							    <tr>
+							    <tr id="Wednesday">
 										<th scope="row">Wednesday</th>
 							      <td>9 am</td>
 							      <td>9 pm</td>
 							    </tr>
-									<tr>
+									<tr id="Thursday">
 										<th scope="row">Thursday</th>
 										<td>9 am</td>
 										<td>9 pm</td>
 									</tr>
-									<tr>
+									<tr id="Friday">
 										<th scope="row">Friday</th>
 										<td>9 am</td>
 										<td>9 pm</td>
 									</tr>
-									<tr>
+									<tr id="Saturday">
 										<th scope="row">Saturday</th>
 										<td>10 am</td>
 										<td>6 pm</td>
 									</tr>
-									<tr>
+									<tr id="Sunday">
 										<th scope="row">Sunday</th>
 										<td>10 am</td>
 										<td>6 pm</td>
@@ -520,6 +532,7 @@
 			</div>
 		</div>
 
+		<script src="js/dundurn.js"></script>
 		<script src="js/aos.js"></script>
 	</body>
 </html>

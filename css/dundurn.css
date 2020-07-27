@@ -37,3 +37,6 @@ html {
     width:100%;
     position:absolute;
 }
+
+.Open { background-color: #d4edda; }
+.Closed { background-color: #f8d7da; }
