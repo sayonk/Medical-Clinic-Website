@@ -4,24 +4,45 @@ html {
 }
 
 .fa-phone{
-  color: black
+  color: white
 }
 .fa-phone:hover{
-  color:#7790ed;
+  color:#282b5e;
 }
 
 .fa-fax{
-  color: black
+  color: white
 }
 .fa-fax:hover{
-  color:#7790ed;
+  color:#282b5e;
 }
 
 .fa-map-marker{
-  color: black
+  color: white
 }
 .fa-map-marker:hover{
-  color:#7790ed;
+  color:#282b5e;
+}
+
+.fa-globe{
+  color: white
+}
+.fa-globe:hover{
+  color:#282b5e;
+}
+
+.fa-envelope-o{
+  color: white
+}
+.fa-envelope-o:hover{
+  color:#282b5e;
+}
+
+.fa-facebook-square{
+  color: white
+}
+.fa-facebook-square:hover{
+  color:#282b5e;
 }
 
 .map-responsive{
@@ -40,3 +61,63 @@ html {
 
 .Open { background-color: #d4edda; }
 .Closed { background-color: #f8d7da; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 76.5%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: #000;
+}
+
+.card:hover .overlay {
+  opacity: 0.7;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  text-align: left;
+}
+
+/* NAVIGATION */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #282b5e;
+  height: 2px;
+}
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+.active1 {
+  color: #282b5e !important;
+}

@@ -14,42 +14,32 @@
 	</head>
 	<body>
 
-		<nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+		<nav class="shadow stroke navbar navbar-expand-sm bg-light navbar-light fixed-top" id="header">
 			<!-- Brand/logo -->
 			<a class="navbar-brand" href="dundurn.html">
-				<img src="assets/doctor.svg" alt="logo" style="width:40px;height:20px;">
+				<img src="assets/doctor.svg" alt="logo" width=20px>
 			</a>
 
-			<u1 class="navbar-nav">
+			<ul class="navbar-nav">
 				<li class="nav-item">
-					<h5 class="display-5">Dundurn Medical Centre Inc.</h5>
+					<p class="display-10">Dundurn Medical Centre Inc.</p>
 				</li>
-			</u1>
+			</ul>
 
-			<u1 class="navbar-nav ml-auto">
+			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#about">About</a>
+					<a class="nav-link" href="#about" id="about_link">About</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#booking">Booking</a>
+					<a class="nav-link" href="#booking" id="booking_link">Booking</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#doctors">Doctors</a>
+					<a class="nav-link" href="#doctors" id="doctors_link">Doctors</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#contact">Contact</a>
+					<a class="nav-link" href="#contact" id="contact_link">Contact</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="http://www.primacyclinics.ca/locations/dundurn/?fbclid=IwAR0yDOyGioF-Fwdoc9ohmNwsuFzZLKqJ7a8DWYtomNVEce7-EOw9hWZNSQA" target="_blank">
-						<i class="fa fa-globe" aria-hidden="true"></i>
-					</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="mailto:sayon.mk@gmail.com" target="_blank" class="right">
-						<i class="fa fa-envelope-o" aria-hidden="true"></i>
-					</a>
-				</li>
-			</u1>
+			</ul>
 		</nav>
 
 		<div id="slide" class="carousel slide" data-ride="carousel">
@@ -64,35 +54,35 @@
 		  <!-- The slideshow -->
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
-		      <img src="assets/Carousel/Carousel1.jpg" alt="Me" class="img-fluid" height="auto">
+		      <img src="assets/Carousel/Carousel1.jpg" alt="Me" class="img-fluid" height="auto" id="c1">
 					<div class="carousel-content">
-						<h1 class="display-1">Dundurn Medical Centre Inc.</h1>
+						<p class="display-1">Dundurn Medical Centre Inc.</p>
 					</div>
 					<div class="carousel-caption">
 						<p class="display-6">
-							<a href="#about">About us.</a>
+							<a href="#about" class="btn btn-custom" id="b1">About us</a>
 						</p>
 					</div>
 		    </div>
 		    <div class="carousel-item">
-		      <img src="assets/Carousel/Carousel2.jpg" alt="Mountains" class="img-fluid" height="auto">
+		      <img src="assets/Carousel/Carousel2.jpg" alt="Mountains" class="img-fluid" height="auto" id="c2">
 					<div class="carousel-content">
-						<h1 class="display-1">Booking</h1>
+						<p class="display-1">Booking</p>
 					</div>
 					<div class="carousel-caption">
 						<p class="display-6">
-							<a href="#booking">Book an appointment online.</a>
+							<a href="#booking" class="btn btn-custom" id="b2">Book an apointment online</a>
 						</p>
 					</div>
 		    </div>
 		    <div class="carousel-item">
-		      <img src="assets/Carousel/Carousel3.jpg" alt="Chess" class="img-fluid" height="auto">
+		      <img src="assets/Carousel/Carousel3.jpg" alt="Chess" class="img-fluid" height="auto" id="c3">
 					<div class="carousel-content">
-						<h1 class="display-1">Our Doctors</h1>
+						<p class="display-1">Our Doctors</p>
 					</div>
 					<div class="carousel-caption">
 						<p class="display-6">
-							<a href="#doctors">Meet our staff!</a>
+							<a href="#doctors" class="btn btn-custom" id="b3">Meet the team!</a>
 						</p>
 					</div>
 		    </div>
@@ -109,20 +99,18 @@
 		</div>
 
 		<div class="row" id="about">
-			<div class="shadow container-lg p-3 my-3 border" data-aos="fade-up">
+			<div class="shadow container-lg p-3 my-3 border bg-custombg2 text-white" data-aos="fade-up">
 				<p class="display-4">About us</p>
 
 				<div class="container-lg p-3 my-3">
-					<h5>The Dundurn Medical Centre Inc. operates as a family practice and a walk in clinic in Hamilton, ON</h5>
+					<p class="display-7">The Dundurn Medical Centre Inc. operates as a family practice and a walk in clinic in Hamilton, ON</p>
+					<p>The Dundurn Medical Centre Inc. is committed to providing high quality, medical care in a clean and friendly environment with added convenience.</p>
+					<p>Our clinic provides both Family Practice and Walk-In style medical service where patients can be treated by a qualified health care team. We understand our patients’ needs and treat all with care and respect.</p>
 					<br>
-					<h7>The Dundurn Medical Centre Inc. is committed to providing high quality, medical care in a clean and friendly environment with added convenience.</h7>
-					<br><br>
-					<h7>Our clinic provides both Family Practice and Walk-In style medical service where patients can be treated by a qualified health care team. We understand our patients’ needs and treat all with care and respect.</h7>
-					<br><br>
 
 					<div class="row">
 						<div class="col-lg-6">
-							<h2>Services</h2>
+							<p class="display-5">Services</p>
 							<br>
 							<u1>
 								<li>Walk-In Medical Clinic</li>
@@ -132,9 +120,9 @@
 								<li>Orthotics</li>
 							</u1>
 							<br>
-							<h7>Services provided in addition to general practice include:</h7>
+							<p class="display-7">Services provided in addition to general practice include:</p>
 							<u1>
-								<li style="color:#7790ed;">Minor Surgical Procedures (Stitches)</li>
+								<li  style="color:#7790ed;">Minor Surgical Procedures (Stitches)</li>
 								<li style="color:#7790ed;">Drivers Physical Exams</li>
 								<li>Family Planning</li>
 								<li>Wart Treatment – Liquid Nitrogen</li>
@@ -147,24 +135,82 @@
 								<li>Sexual Health Clinic</li>
 							</u1>
 							<br>
-							<h7>Cardiology Consultation and Diagnostic Services</h7>
+							<p class="display-7">Cardiology Consultation and Diagnostic Services</p>
 							<u1>
 								<li style="color:#7790ed;">Cardiac Consultation, Echos, Holters, ECG’s</li>
 							</u1>
 							<br>
-						</div>
-
-						<div class="col-lg-6">
-							<h2>Policies</h2>
+							<p class="display-5">Policies</p>
 							<br>
 							<u1>
 								<li>Walk in is available (no appointment necessary).</li>
 								<li>Hours are subject to change without notice.</li>
 							</u1>
 							<br>
-							<h7>All patients are required to produce a valid Provincial Health Card at the time of each visit, otherwise patients will be required to pay cash at the time of the visit.</h7>
-							<br><br>
-							<h7>*Highlighted services require an appointment.</h7>
+							<p>All patients are required to produce a valid Provincial Health Card at the time of each visit, otherwise patients will be required to pay cash at the time of the visit.</p>
+							<p class="display-7">*Highlighted services require an appointment.</h7>
+						</div>
+
+						<div class="col-lg-6">
+							<p class="display-5" style="text-align:center;">Hours of Operation</p>
+							<table class="table text-white">
+								<thead>
+									<tr>
+										<th scope="col">Day</th>
+										<th scope="col">From</th>
+										<th scope="col">To</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="Monday">
+										<th scope="row" class="display-7">Monday</th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Tuesday">
+										<th scope="row" class="display-7">Tuesday</th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Wednesday">
+										<th scope="row" class="display-7">Wednesday</th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Thursday">
+										<th scope="row" class="display-7">Thursday</th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Friday">
+										<th scope="row" class="display-7">Friday</th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Saturday">
+										<th scope="row" class="display-7">Saturday</th>
+										<td class="display-6">10 am</td>
+										<td class="display-6">6 pm</td>
+									</tr>
+									<tr id="Sunday">
+										<th scope="row" class="display-7">Sunday</th>
+										<td class="display-6">10 am</td>
+										<td class="display-6">6 pm</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<p class="display-7">*Holidays: 12:00 PM - 5:00 PM</p>
+							<p class="display-7">*We are open every day of the year except Christmas Day!</p>
+
+							<!--Google map-->
+							<div class="map-responsive">
+								 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5811.063837395763!2d-79.889257!3d43.261231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9b647a93c3d9%3A0x606b64e93b9a9713!2s50%20Dundurn%20St%20S%2C%20Hamilton%2C%20ON%20L8P%204W3%2C%20Canada!5e0!3m2!1sen!2sus!4v1595704572180!5m2!1sen!2sus"
+									frameborder="0" style="border:0" allowfullscreen=""></iframe>
+							</div>
+							<p class="display-6">Located on the ground floor beside the Fortinos</p>
+							<p class="display-6">Phone number: (905) 529-4040</p>
+							<p class="display-6">Fax number: (905) 529-4494</p>
 						</div>
 					</div>
 				</div>
@@ -172,16 +218,16 @@
 		</div>
 
 		<div class="row" id="booking">
-			<div class="shadow container-lg p-3 my-3 border" data-aos="fade-up">
+			<div class="shadow container-lg p-3 my-3 border bg-custombg2 text-white" data-aos="fade-up">
 				<p class="display-4">Book an appointment</p>
 
 				<div class="container-lg p-3 my-3">
 
-					<form class="needs-validation" novalidate id="form" method="post" autocomplete="on">
-						<h2>About you</h2>
+					<form class="needs-validation" novalidate id="form" method="post" autocomplete="on" action="book.php">
+						<p class="display-5">About you</p>
 						<br>
 
-						<h7>I am a new patient *</h7>
+						<p class="display-7">I am a new patient *</p>
 						<div class="form-row">
 							<div class="form-group col-lg-12">
 								<div class="form-check form-check-inline">
@@ -198,7 +244,7 @@
 						</div>
 						<br>
 
-						<h7>Is the patient a child? (under 18) *</h7>
+						<p class="display-7">Is the patient a child? (under 18) *</p class="display-6">
 						<div class="form-row">
 							<div class="form-group col-lg-12">
 								<div class="form-check form-check-inline">
@@ -218,13 +264,13 @@
 
 						<div class="form-row">
 							<div class="form-group col-lg-6">
-								<label for="fname">First name *</label>
+								<label for="fname" class="display-7">First name *</label>
 							  <input type="text" name="fname" class="form-control" placeholder="Your first name" id="fname" required>
 								<div class="invalid-feedback">Please enter your first name.</div>
 							</div>
 
 							<div class="form-group col-lg-6">
-								<label for="lname">Last name *</label>
+								<label for="lname" class="display-7">Last name *</label>
 							  <input type="text" name="lname" class="form-control" placeholder="Your last name" id="lname" required>
 								<div class="invalid-feedback">Please enter your last name.</div>
 							</div>
@@ -232,28 +278,28 @@
 
 						<div class="form-row">
 							<div class="form-group col-lg-6">
-								<label for="phone">Phone number *</label>
+								<label for="phone" class="display-7">Phone number *</label>
 								<input type="tel" name="phone" pattern='^\+?\d{0,13}' class="form-control" placeholder="Your phone number" id="phone" required>
 								<div class="invalid-feedback">Please enter a valid phone number.</div>
 							</div>
 
 							<div class="form-group col-lg-6">
-								<label for="email">Email address *</label>
+								<label for="email" class="display-7">Email address *</label>
 								<input type="email" name="email" class="form-control" placeholder="Your email address" id="email" required>
 								<div class="invalid-feedback">Please enter a valid email address.</div>
 							</div>
 						</div>
 
 						<div class="form-group">
-							<label for="FormControlTextarea1">Additional Information</label>
+							<label for="FormControlTextarea1" class="display-7">Additional Information</label>
 							<textarea class="form-control" id="FormControlTextarea1" rows="3" placeholder="Any additional information you think would be needed"></textarea>
 						</div>
 						<br>
 
-						<h2>About your appointment</h2>
+						<p class="display-5">About your appointment</p>
 						<br>
 
-						<h7>Reason for visit *</h7>
+						<p class="display-7">Reason for visit *</p>
 						<div class="form-row">
 							<div class="form-group col-lg-12">
 								<select class="form-control custom-select" required>
@@ -279,16 +325,16 @@
 
 						<div class="form-row">
 							<div class="form-group col-lg-12">
-								<label for="FormControlTextarea2">Additional Information</label>
+								<label for="FormControlTextarea2" class="display-7">Additional Information</label>
 								<textarea class="form-control" id="FormControlTextarea2" rows="3" placeholder="Any additional information you think would be needed"></textarea>
 							</div>
 						</div>
 						<br>
 
-						<h2>Pharmacy details</h2>
+						<p class="display-5">Pharmacy details</p>
 						<br>
 
-						<h7>Where do you want your prescription? *</h7>
+						<p class="display-7">Where do you want your prescription? *</p>
 						<div class="form-row">
 							<div class="form-group col-lg-12">
 								<div class="form-check">
@@ -304,23 +350,35 @@
 						</div>
 						<br>
 
+						<div id="address">
+							<div class="form-row">
+								<div class="form-group col-lg-12">
+									<label for="inputAddress1" class="display-7">Your full address *</label>
+									<textarea class="form-control" id="inputAddress1" rows="3" placeholder="Your address"></textarea>
+									<div class="invalid-feedback">Please enter your address.</div>
+								</div>
+							</div>
+							<br>
+						</div>
+
 						<div id="pharmacy">
 							<div class="form-row">
 								<div class="form-group col-lg-12">
-									<label for="inputPharmacy">Preferred Pharmacy</label>
+									<label for="inputPharmacy" class="display-7">Preferred Pharmacy *</label>
 									<input type="text" class="form-control" placeholder="Pharmacy of preference" id="inputPharmacy">
+									<div class="invalid-feedback">Please enter your preferred pharmacy.</div>
 								</div>
 							</div>
 
 							<div class="form-row">
 								<div class="form-group col-lg-6">
-									<label for="inputPhone2">Phone number</label>
+									<label for="inputPhone2" class="display-7">Phone number *</label>
 									<input type="tel" pattern='^\+?\d{0,13}' class="form-control" placeholder="Phone number" id="inputPhone2">
 									<div class="invalid-feedback">Please enter a valid phone number.</div>
 								</div>
 
 								<div class="form-group col-lg-6">
-									<label for="inputFax">Fax Number</label>
+									<label for="inputFax" class="display-7">Fax Number</label>
 									<input type="tel" pattern='^\+?\d{0,13}' class="form-control" placeholder="Fax Number" id="inputFax">
 									<div class="invalid-feedback">Please enter a valid phone number.</div>
 								</div>
@@ -329,8 +387,9 @@
 
 							<div class="form-row">
 								<div class="form-group col-lg-12">
-									<label for="inputAddress">Full address</label>
+									<label for="inputAddress" class="display-7">Full address</label>
 									<textarea class="form-control" id="inputAddress" rows="3" placeholder="Pharmacy of preference address"></textarea>
+									<div class="invalid-feedback">Please enter the address.</div>
 								</div>
 							</div>
 							<br>
@@ -350,17 +409,19 @@
 		</div>
 
 		<div class="row" id="doctors">
-			<div class="shadow container-lg p-3 my-3 border" data-aos="fade-up">
+			<div class="shadow container-lg p-3 my-3 border bg-custombg2 text-white" data-aos="fade-up">
 				<p class="display-4">Our Doctors</p>
 
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="card" style="width: 18rem;">
 						  <img class="card-img-top" src="assets/Doctors/Doctor1.jpg" alt="Card image cap">
-						  <div class="card-body">
-						    <h5 class="card-title">Dr. Sim Bhular</h5>
+							<div class="overlay">
+						    <div class="text">“I love playing defence, that’s what I do and especially when there’s no three in the key it’s going to be like college again, blocking shots left and right.”</div>
+						  </div>
+							<div class="card-body">
+						    <p class="display-9 card-title">Dr. Sim Bhullar</p>
 						    <p class="card-text">Primary Care Physician</p>
-						    <a href="#" class="btn btn-custom">Learn More</a>
 						  </div>
 						</div>
 					</div>
@@ -368,10 +429,12 @@
 					<div class="col-lg-4">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="assets/Doctors/Doctor2.jpg" alt="Card image cap">
+							<div class="overlay">
+								<div class="text">“Dream as if you’ll live forever, live as if you’ll die today.”</div>
+							</div>
 							<div class="card-body">
-								<h5 class="card-title">Dr. Lebron James</h5>
+								<p class="display-9 card-title">Dr. Lebron James</p>
 								<p class="card-text">Cardiologist, PhD.</p>
-								<a href="#" class="btn btn-custom">Learn More</a>
 							</div>
 						</div>
 					</div>
@@ -379,23 +442,27 @@
 					<div class="col-lg-4">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="assets/Doctors/Doctor3.jpg" alt="Card image cap">
+							<div class="overlay">
+								<div class="text">“She's been the face of women's college basketball since I was a little girl.”</div>
+							</div>
 							<div class="card-body">
-								<h5 class="card-title">Dr. Doris Burke</h5>
+								<p class="display-9 card-title">Dr. Doris Burke</h5>
 								<p class="card-text">General Practisioner</p>
-								<a href="#" class="btn btn-custom">Learn More</a>
 							</div>
 						</div>
 					</div>
 				</div>
-
+				<br>
 				<div class="row">
 					<div class="col-lg-4">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="assets/Doctors/Doctor4.jpg" alt="Card image cap">
+							<div class="overlay">
+								<div class="text">“I feel for people with crazy names. It's been a challenge, but if that's my struggle, I can live with it.”</div>
+							</div>
 							<div class="card-body">
-								<h5 class="card-title">Dr. Molly Qerim</h5>
-								<p class="card-text">Pediatrician</p>
-								<a href="#" class="btn btn-custom">Learn More</a>
+								<p class="display-9 card-title">Dr. Molly Qerim</p>
+								<p class="card-text">Dermatologist, PhD.</p>
 							</div>
 						</div>
 					</div>
@@ -403,10 +470,12 @@
 					<div class="col-lg-4">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="assets/Doctors/Doctor5.jpg" alt="Card image cap">
+							<div class="overlay">
+								<div class="text">“Today I know that there is still work to be done, but along the way I am achieving my dreams.”</div>
+							</div>
 							<div class="card-body">
-								<h5 class="card-title">Dr. Joy Taylor</h5>
-								<p class="card-text">Dermatologist, PhD.</p>
-								<a href="#" class="btn btn-custom">Learn More</a>
+								<p class="display-9 card-title">Dr. Candace Parker</p>
+								<p class="card-text">Pediatrician</p>
 							</div>
 						</div>
 					</div>
@@ -414,10 +483,12 @@
 					<div class="col-lg-4">
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="assets/Doctors/Doctor6.jpg" alt="Card image cap">
+							<div class="overlay">
+								<div class="text">“I've got a theory that if you give 100 percent all of the time, somehow things will work out in the end.”</div>
+							</div>
 							<div class="card-body">
-								<h5 class="card-title">Dr. Larry Bird</h5>
+								<p class="display-9 card-title">Dr. Larry Bird</p>
 								<p class="card-text">Neurologist</p>
-								<a href="#" class="btn btn-custom">Learn More</a>
 							</div>
 						</div>
 					</div>
@@ -428,105 +499,41 @@
 		<div class="row" id="contact">
 			<div class="col-md-12">
 				<div class="container-lg p-3 my-3">
-					<p class="display-4">Contact</p>
-				</div>
+					<div class="row justify-content-md-center">
+						<div class="col-lg-1">
+							<a class="nav-link" href="mailto:sayon.mk@gmail.com" target="_blank" class="right">
+								<i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="tel:9055294040" class="right">
+								<i class="fa fa-phone fa-4x" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="tel:9055294494" class="right">
+								<i class="fa fa-fax fa-4x" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="https://goo.gl/maps/g9mbkMpzp9PYZpiV9" target="_blank" class="right">
+								<i class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="http://www.primacyclinics.ca/locations/dundurn/?fbclid=IwAR0yDOyGioF-Fwdoc9ohmNwsuFzZLKqJ7a8DWYtomNVEce7-EOw9hWZNSQA" target="_blank">
+								<i class="fa fa-globe fa-4x" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="https://www.facebook.com/Dundurn-Medical-Centre-Inc-351745071593063/" target="_blank" class="right">
+								<i class="fa fa-facebook-square fa-4x" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
 
-				<div class="container-lg p-3 my-3">
 					<div class="row">
-						<div class="col-lg-5">
-
-							<div class="row">
-								<div class="col-lg-2">
-									<a class="nav-link" href="tel:9055294040" class="right">
-										<i class="fa fa-phone" aria-hidden="true"></i>
-									</a>
-								</div>
-								<div class="col-lg-10">
-									<p>(905) 529-4040</p>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-lg-2">
-									<a class="nav-link" href="tel:9055294494" class="right">
-										<i class="fa fa-fax" aria-hidden="true"></i>
-									</a>
-								</div>
-								<div class="col-lg-10">
-									<p>(905) 529-4494</p>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-lg-2">
-									<a class="nav-link" href="https://goo.gl/maps/g9mbkMpzp9PYZpiV9" target="_blank" class="right">
-										<i class="fa fa-map-marker" aria-hidden="true"></i>
-									</a>
-								</div>
-								<div class="col-lg-10">
-									<h7>50 Dundun Street South Hamilton, ON L8P 4W3</h7>
-									<p>Located on the ground floor beside the Fortinos</p>
-								</div>
-							</div>
-								<!--Google map-->
-							<div class="map-responsive">
-								 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5811.063837395763!2d-79.889257!3d43.261231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9b647a93c3d9%3A0x606b64e93b9a9713!2s50%20Dundurn%20St%20S%2C%20Hamilton%2C%20ON%20L8P%204W3%2C%20Canada!5e0!3m2!1sen!2sus!4v1595704572180!5m2!1sen!2sus"
-									frameborder="0" style="border:0" allowfullscreen=""></iframe>
-							</div>
-						</div>
-
-						<div class="col-lg-7">
-							<h4 style="text-align:center;">Hours of Operation</h4>
-							<table class="table">
-							  <thead>
-							    <tr>
-							      <th scope="col">Day</th>
-							      <th scope="col">From</th>
-							      <th scope="col">To</th>
-							    </tr>
-							  </thead>
-							  <tbody>
-							    <tr id="Monday">
-							      <th scope="row">Monday</th>
-							      <td>9 am</td>
-							      <td>9 pm</td>
-							    </tr>
-							    <tr id="Tuesday">
-										<th scope="row">Tuesday</th>
-							      <td>9 am</td>
-							      <td>9 pm</td>
-							    </tr>
-							    <tr id="Wednesday">
-										<th scope="row">Wednesday</th>
-							      <td>9 am</td>
-							      <td>9 pm</td>
-							    </tr>
-									<tr id="Thursday">
-										<th scope="row">Thursday</th>
-										<td>9 am</td>
-										<td>9 pm</td>
-									</tr>
-									<tr id="Friday">
-										<th scope="row">Friday</th>
-										<td>9 am</td>
-										<td>9 pm</td>
-									</tr>
-									<tr id="Saturday">
-										<th scope="row">Saturday</th>
-										<td>10 am</td>
-										<td>6 pm</td>
-									</tr>
-									<tr id="Sunday">
-										<th scope="row">Sunday</th>
-										<td>10 am</td>
-										<td>6 pm</td>
-									</tr>
-							  </tbody>
-							</table>
-
-							<h6>*Holidays: 12:00 PM - 5:00 PM</h6>
-							<h6>*We are open every day of the year except Christmas Day!</h6>
-						</div>
+						<p class="display-11">Dundurn &copy; 2020 All Rights Reserved</p>
 					</div>
 				</div>
 			</div>

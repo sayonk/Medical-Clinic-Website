@@ -29,22 +29,11 @@
   }, false);
 })();
 
-$(document).ready(function() {
-  $('input[name="radioOptions1"]').on('change', function() {
-    $('input[name="new"]').prop("checked", true);
-  });
-  $('input[name="radioOptions2"]').on('change', function() {
-    $('input[name="child"]').prop("checked", true);
-  });
+$('input[name="radioOptions1"]').on('change', function() {
+  $('input[name="new"]').prop("checked", true);
 });
-
-$('#pharmacy').addClass('hide').hide();
-$('input[name="radioOptions3"]').on('change', function() {
-  if ($("input[name='radioOptions3']:checked").val()=="2") {
-    $('#pharmacy').removeClass('hide').slideDown().show();
-  } else {
-    $('#pharmacy').addClass('hide').slideUp();
-  }
+$('input[name="radioOptions2"]').on('change', function() {
+  $('input[name="child"]').prop("checked", true);
 });
 
 weekday();
@@ -115,3 +104,64 @@ function weekday() {
       }
     }
 }
+
+$('#pharmacy').addClass('hide').hide();
+$('#address').addClass('hide').hide();
+$('input[name="radioOptions3"]').on('change', function() {
+  if ($("input[name='radioOptions3']:checked").val()=="1") {
+    $('#pharmacy').addClass('hide').slideUp();
+    $('#address').removeClass('hide').slideDown().show();
+    document.getElementById("inputAddress1").required = true;
+    document.getElementById("inputPhone2").required = false;
+    document.getElementById("inputPharmacy").required = false;
+    document.getElementById("inputAddress").required = false;
+  } else if ($("input[name='radioOptions3']:checked").val()=="2") {
+    $('#address').addClass('hide').slideUp();
+    $('#pharmacy').removeClass('hide').slideDown().show();
+    document.getElementById("inputAddress1").required = false;
+    document.getElementById("inputPhone2").required = true;
+    document.getElementById("inputPharmacy").required = true;
+    document.getElementById("inputAddress").required = true;
+  }
+});
+
+$(window).scroll(function() {
+
+  var scrollPosition = $(window).scrollTop();
+
+  var aboutTop = $('#about').offset().top;
+  var bookingTop = $('#booking').offset().top;
+  var doctorsTop = $('#doctors').offset().top;
+  var contactTop = $('#contact').offset().top;
+
+  if (scrollPosition >= contactTop) {
+    $('#booking_link').removeClass('active1')
+    $('#doctors_link').removeClass('active1')
+    $('#about_link').removeClass('active1')
+    $('#contact_link').addClass('active1')
+  }
+  else if (scrollPosition >= doctorsTop) {
+    $('#booking_link').removeClass('active1')
+    $('#contact_link').removeClass('active1')
+    $('#about_link').removeClass('active1')
+    $('#doctors_link').addClass('active1')
+  }
+  else if (scrollPosition >= bookingTop) {
+    $('#about_link').removeClass('active1')
+    $('#doctors_link').removeClass('active1')
+    $('#contact_link').removeClass('active1')
+    $('#booking_link').addClass('active1')
+  }
+  else if (scrollPosition >= aboutTop) {
+    $('#booking_link').removeClass('active1')
+    $('#doctors_link').removeClass('active1')
+    $('#contact_link').removeClass('active1')
+    $('#about_link').addClass('active1')
+  }
+  else {
+    $('#booking_link').removeClass('active1')
+    $('#doctors_link').removeClass('active1')
+    $('#contact_link').removeClass('active1')
+    $('#about_link').removeClass('active1')
+  }
+});
