@@ -1,48 +1,65 @@
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 50px;
+  scroll-padding-top: 4vw;
+}
+
+li {
+  font-size: 1.3vw;
+}
+
+.btn-custom {
+  font-size: 1.5vw;
+}
+
+.appear {
+top:-7vw;
+opacity:0;
+}
+
+.fa {
+  font-size: 5vw !important;
 }
 
 .fa-phone{
-  color: white
+  color: white;
 }
 .fa-phone:hover{
-  color:#282b5e;
+  color: #282b5e;
 }
 
 .fa-fax{
-  color: white
+  color: white;
 }
 .fa-fax:hover{
-  color:#282b5e;
+  color: #282b5e;
 }
 
 .fa-map-marker{
-  color: white
+  color: white;
 }
 .fa-map-marker:hover{
-  color:#282b5e;
+  color: #282b5e;
 }
 
 .fa-globe{
-  color: white
+  color: white;
 }
 .fa-globe:hover{
-  color:#282b5e;
+  color: #282b5e;
 }
 
 .fa-envelope-o{
-  color: white
+  color: white;
 }
 .fa-envelope-o:hover{
-  color:#282b5e;
+  color: #282b5e;
 }
 
 .fa-facebook-square{
-  color: white
+  color: white;
 }
 .fa-facebook-square:hover{
-  color:#282b5e;
+  color: #282b5e;
 }
 
 .map-responsive{
@@ -59,8 +76,10 @@ html {
     position:absolute;
 }
 
-.Open { background-color: #d4edda; }
-.Closed { background-color: #f8d7da; }
+.today {
+  background-color: white;
+  color: #282b5e;
+}
 
 .overlay {
   position: absolute;
@@ -68,7 +87,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 76.5%;
+  height: 78.3%;
   width: 100%;
   opacity: 0;
   transition: .4s ease;
@@ -81,7 +100,7 @@ html {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 1.5vw;
   position: absolute;
   bottom: 5%;
   left: 5%;
@@ -112,7 +131,7 @@ nav.fill ul li a:after {
   content: '.';
   color: transparent;
   background: #282b5e;
-  height: 2px;
+  height: 0.15vw;
 }
 nav.stroke ul li a:hover:after {
   width: 100%;
@@ -120,4 +139,8 @@ nav.stroke ul li a:hover:after {
 
 .active1 {
   color: #282b5e !important;
+}
+
+.contact {
+  background-color: #e8eaed;
 }

@@ -100,4 +100,52 @@ $mail->Body = '<div style="background-color:#e0eaef; padding:50px 0px 50px 0px;"
 
 $mail->send();
 
+global $whitelist;
+
+// Whitelist data
+foreach ( $whitelist as $key ) {
+  $fields[$key] = $_POST[$key];
+}
+
+// Process database actions
+/*function process_database( $post ) {
+  global $table;
+
+  // Connect to database
+  $mysqli = new mysqli( DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME );
+
+  // Check database connection
+  if ( $mysqli->connect_error ) {
+    return false;
+  } else {
+    if ( $stmt = $mysqli->prepare( "INSERT INTO $table ( 'new', 'child', 'fname', 'lname', 'number', 'email', 'you-add', 'reason', 'app-add', 'address', 'pharmacy', 'pharm-number', 'pharm-fax-number', 'pharm-address') VALUES ( ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)" ) ) {
+      $stmt->bind_param( "bbssissssssiis", $new, $child, $fname, $lname, $number, $email, $you_add, $reason, $app_add, $address, $pharmacy, $pharm_number, $pharm_fax_number, $pharm_address);
+
+      $new = $post['new'];
+      $child = $post['child'];
+      $fname = $post['fname'];
+      $lname = $post['lname'];
+      $number = $post['number'];
+      $email = $post['email'];
+      $you_add = $post['you_add'];
+      $reason = $post['reason'];
+      $app_add = $post['app_add'];
+      $address = $post['address'];
+      $pharmacy = $post['pharmacy'];
+      $pharm_number = $post['pharm-number'];
+      $pharm_fax_number = $post['pharm-fax-number'];
+      $pharm_address = $post['pharm-address'];
+
+      if ( ! $stmt->execute() ) {
+        return false;
+      }
+    } else {
+      // For debugging purposes use: var_dump($mysqli->error); exit;
+      return false;
+    }
+  }
+
+  return true;
+}*/
+
 ?>

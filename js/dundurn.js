@@ -1,5 +1,27 @@
 // For disabling form submissions if there are invalid fields
 
+/*---------------------------------------*/
+/*	NAVIGATION AND NAVIGATION VISIBLE ON SCROLL
+/*---------------------------------------*/
+$( window ).on( "load", function() {
+   mainNav();
+   $(window).scroll(function() {
+       mainNav();
+   });
+   function mainNav() {
+       var top = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+       if (top > 40) $('.appear').stop().animate({
+           "opacity": '1',
+           "top": '0'
+       });
+       else $('.appear').stop().animate({
+           "top": '-70',
+           "opacity": '0'
+       });
+
+ }
+    });
+
 (function() {
   'use strict';
   window.addEventListener('load', function() {
@@ -69,55 +91,34 @@ function weekday() {
     ed.setHours(et.split(":")[0]);
     ed.setMinutes(et.split(":")[1]);
     ed.setSeconds(et.split(":")[2]);
+
+    var day = '';
+    var hours = '';
+
     if (d.getDay() == 0) {
-      if (sd < d && ed > d) {
-        document.getElementById("Sunday").classList.add('Open');
-      } else {
-        document.getElementById("Sunday").classList.add('Closed');
-      }
+      day = 'Sunday';
+    } else if (d.getDay() == 1) {
+      day = 'Monday';
+    } else if (d.getDay() == 2) {
+      day = 'Tuesday';
+    } else if (d.getDay() == 3) {
+      day = 'Wednesday';
+    } else if (d.getDay() == 4) {
+      day = 'Thursday';
+    } else if (d.getDay() == 5) {
+      day = 'Friday';
+    } else if (d.getDay() == 6) {
+      day = 'Saturday';
     }
-    if (d.getDay() == 1) {
-      if (sd < d && ed > d) {
-        document.getElementById("Monday").classList.add('Open');
-      } else {
-        document.getElementById("Monday").classList.add('Closed');
-      }
+
+    document.getElementById(day).classList.add('today');
+    if (sd < d && ed > d) {
+      hours = 'Open';
+    } else {
+      hours = 'Closed';
     }
-    if (d.getDay() == 2) {
-      if (sd < d && ed > d) {
-        document.getElementById("Tuesday").classList.add('Open');
-      } else {
-        document.getElementById("Tuesday").classList.add('Closed');
-      }
-    }
-    if (d.getDay() == 3) {
-      if (sd < d && ed > d) {
-        document.getElementById("Wednesday").classList.add('Open');
-      } else {
-        document.getElementById("Wednesday").classList.add('Closed');
-      }
-    }
-    if (d.getDay() == 4) {
-      if (sd < d && ed > d) {
-        document.getElementById("Thursday").classList.add('Open');
-      } else {
-        document.getElementById("Thursday").classList.add('Closed');
-      }
-    }
-    if (d.getDay() == 5) {
-      if (sd < d && ed > d) {
-        document.getElementById("Friday").classList.add('Open');
-      } else {
-        document.getElementById("Friday").classList.add('Closed');
-      }
-    }
-    if (d.getDay() == 6) {
-      if (sd < d && ed > d) {
-        document.getElementById("Saturday").classList.add('Open');
-      } else {
-        document.getElementById("Saturday").classList.add('Closed');
-      }
-    }
+
+    $('#' + day + ' .open').html('<img src="assets/Hours/' + hours + '.png" height="20vw" style="margin-top:0.3vw; margin-right:1vw;">');
 }
 
 $(window).scroll(function() {
