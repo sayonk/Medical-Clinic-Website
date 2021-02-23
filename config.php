@@ -13,7 +13,7 @@ $fromName = 'Dundurn Medical Centre';
 $email_address = 'testpython413@gmail.com';
 
 // Set the password of the email
-$password = 'Sayon!234';
+$password = '*************';
 
 // Set the subject line for email messages
 $subject = 'Dundurn Medical Centre Appointment';

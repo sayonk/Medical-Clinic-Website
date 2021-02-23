@@ -118,7 +118,7 @@ function weekday() {
       hours = 'Closed';
     }
 
-    $('#' + day + ' .open').html('<img src="assets/Hours/' + hours + '.png" height="20vw" style="margin-top:0.3vw; margin-right:1vw;">');
+    $('#' + day + ' .open').html('<img src="assets/Hours/' + hours + '.png">');
 }
 
 $(window).scroll(function() {

@@ -11,9 +11,14 @@ li {
   font-size: 1.5vw;
 }
 
+a img {
+  height: 1.7vw;
+  margin-top: 0.4vw;
+}
+
 .appear {
-top:-7vw;
-opacity:0;
+  top: -7vw;
+  opacity: 0;
 }
 
 .fa {
@@ -81,13 +86,21 @@ opacity:0;
   color: #282b5e;
 }
 
+.today .open img {
+  height: 2vw;
+}
+
+.card {
+  width: 22.5vw;
+}
+
 .overlay {
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: 78.3%;
+  height: 75.1%;
   width: 100%;
   opacity: 0;
   transition: .4s ease;

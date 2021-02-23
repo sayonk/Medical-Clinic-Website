@@ -22,56 +22,52 @@
 
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<p class="display-10">Dundurn Medical Centre Inc.</p>
+					<div class="display-10">Dundurn Medical Centre Inc.</div>
 				</li>
 			</ul>
 		</nav>
 
-    <br><br>
-		<div class="row" id="booking">
+		<div class="row" id="booking" style="padding-top: 5vw;">
 			<div class="shadow container-lg p-3 my-3 border bg-custombg2 text-white" data-aos="fade-up">
-				<p class="display-4">Book an appointment</p>
+				<div class="display-4" style="padding-left: 3vw;">Book an appointment</div>
 
 				<div class="container-lg p-3 my-3">
 
 					<form class="needs-validation" novalidate id="form" method="POST" autocomplete="on" action="book.php">
-						<p class="display-5">About you</p>
-						<br>
+						<div class="display-5">About you</div>
 
-						<p class="display-7">I am a new patient *</p>
+						<div class="display-7">I am a new patient *</div>
 						<div class="form-row">
 							<div class="form-group col-lg-12">
 								<div class="form-check form-check-inline">
 								  <input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio1" required value = "Yes">
-								  <label class="form-check-label" for="inlineRadio1">Yes</label>
+								  <label class="form-check-label display-8" for="inlineRadio1">Yes</label>
 								</div>
 								<div class="form-check form-check-inline">
 								  <input class="form-check-input" type="radio" name="radioOptions1" id="inlineRadio2" required value = "No">
-								  <label class="form-check-label" for="inlineRadio2">No</label>
+								  <label class="form-check-label display-8" for="inlineRadio2">No</label>
 								</div>
 								<input type="radio" name="new" style="display:none;" required>
 								<div class="invalid-feedback">Please choose an option.</div>
 							</div>
 						</div>
-						<br>
 
-						<p class="display-7">Is the patient a child? (under 18) *</p>
+						<div class="display-7">Is the patient a child? (under 18) *</div>
 						<div class="form-row">
 							<div class="form-group col-lg-12">
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio3" required value = "Yes">
-									<label class="form-check-label" for="inlineRadio3">Yes</label>
+									<label class="form-check-label display-8" for="inlineRadio3">Yes</label>
 								</div>
 								<div class="form-check form-check-inline">
 									<input class="form-check-input" type="radio" name="radioOptions2" id="inlineRadio4" required value = "No">
-									<label class="form-check-label" for="inlineRadio4">No</label>
+									<label class="form-check-label display-8" for="inlineRadio4">No</label>
 								</div>
 								<input type="radio" name="child" style="display:none;" required>
 								<div class="invalid-feedback">Please choose an option.</div>
 							</div>
 
 						</div>
-						<br>
 
 						<div class="form-row">
 							<div class="form-group col-lg-6">
@@ -105,12 +101,10 @@
 							<label for="FormControlTextarea1" class="display-7">Additional Information</label>
 							<textarea name="you-add" class="form-control" id="FormControlTextarea1" rows="3" placeholder="Any additional information you think would be needed"></textarea>
 						</div>
-						<br>
 
-						<p class="display-5">About your appointment</p>
-						<br>
+						<div class="display-5">About your appointment</div>
 
-						<p class="display-7">Reason for visit *</p>
+						<div class="display-7">Reason for visit *</div>
 						<div class="form-row">
 							<div class="form-group col-lg-12">
 								<select class="form-control custom-select" name="reason" required>
@@ -132,7 +126,6 @@
 								<div class="invalid-feedback">Please choose an option.</div>
 							</div>
 						</div>
-						<br>
 
 						<div class="form-row">
 							<div class="form-group col-lg-12">
@@ -140,26 +133,23 @@
 								<textarea name="app-add" class="form-control" id="FormControlTextarea2" rows="3" placeholder="Any additional information you think would be needed"></textarea>
 							</div>
 						</div>
-						<br>
 
-						<p class="display-5">Pharmacy details</p>
-						<br>
+						<div class="display-5">Pharmacy details</div>
 
-						<p class="display-7">Where do you want your prescription? *</p>
+						<div class="display-7">Where do you want your prescription? *</div>
 						<div class="form-row">
 							<div class="form-group col-lg-12">
 								<div class="form-check">
 								  <input class="form-check-input" type="radio" name="radioOptions3" id="Radios1" required value="Delivery within 24 hours">
-								  <label class="form-check-label" for="Radios1">Delivery within 24 hours</label>
+								  <label class="form-check-label display-8" for="Radios1">Delivery within 24 hours</label>
 								</div>
 								<div class="form-check">
 								  <input class="form-check-input" type="radio" name="radioOptions3" id="Radios2" required value="Forwarded to preferred pharmacy">
-								  <label class="form-check-label" for="Radios2">Forwarded to preferred pharmacy</label>
+								  <label class="form-check-label display-8" for="Radios2">Forwarded to preferred pharmacy</label>
 									<div class="invalid-feedback">Please choose an option.</div>
 								</div>
 							</div>
 						</div>
-						<br>
 
 						<div id="address">
 							<div class="form-row">
@@ -169,7 +159,6 @@
 									<div class="invalid-feedback">Please enter your address.</div>
 								</div>
 							</div>
-							<br>
 						</div>
 
 						<div id="pharmacy">
@@ -194,7 +183,6 @@
 									<div class="invalid-feedback">Please enter a valid phone number.</div>
 								</div>
 							</div>
-							<br>
 
 							<div class="form-row">
 								<div class="form-group col-lg-12">
@@ -203,7 +191,6 @@
 									<div class="invalid-feedback">Please enter the address.</div>
 								</div>
 							</div>
-							<br>
 						</div>
 
 						<button type="submit" class="btn btn-custom">Send my appointment request</button>
@@ -254,9 +241,9 @@
 							</a>
 						</div>
 					</div>
-          <br>
-					<div class="row justify-content-md-center">
-						<p class="display-11">Dundurn &copy; 2021 All Rights Reserved</p>
+
+					<div class="row justify-content-md-center" style="margin-top: 2vw;">
+						<div class="display-11">Dundurn &copy; 2021 All Rights Reserved</div>
 					</div>
 				</div>
 			</div>
