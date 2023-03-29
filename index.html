@@ -1,468 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link rel="shortcut icon" type="image/x-icon" href="assets/logo.svg">
-		<title>Sayon Kathirgamanathan</title>
+		<link rel="shortcut icon" type="image/x-icon" href="assets/doctor.svg">
+		<title>Dundurn Medical Centre</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/Website.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/dundurn.css">
 		<link rel="stylesheet" href="css/aos.css">
 		<script src="js/jquery-3.5.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/fontawesome.js"></script>
-		<script src="js/progressbar.js"></script>
-		<script src="js/Website.js"></script>
 	</head>
 	<body>
 
-		<nav class="shadow navbar navbar-expand-sm bg-light navbar-light fixed-top" id="header">
+		<nav class="shadow stroke navbar navbar-expand-sm bg-light navbar-light fixed-top appear" id="header">
 			<!-- Brand/logo -->
-			<a class="navbar-brand active1" href="#me" id="me_link">
-				<p class="display-5" style="margin-top: -0.2vw;">Sayon Kathirgamanathan</p>
+			<a class="navbar-brand" href="index.html">
+				<img src="assets/doctor.svg" alt="logo">
 			</a>
+
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<div class="display-10">Dundurn Medical Centre Inc.</div>
+				</li>
+			</ul>
 
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="#projects" id="projects_link">
-						<p class="display-5">Projects</p>
-						<i class="fa fa-lightbulb-o"></i>
-					</a>
+					<a class="nav-link" href="booking.html" id="booking_link">Booking</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#experience" id="experience_link">
-						<p class="display-5">Experience</p>
-						<i class="fa fa-globe"></i>
-					</a>
+					<a class="nav-link" href="#about" id="about_link">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#doctors" id="doctors_link">Doctors</a>
 				</li>
 			</ul>
 		</nav>
 
-		<div class="bg-image" id="me">
-			<img src="assets/Background/Background1.jpg" alt="Me" class="img-fluid bgd1" width="100%">
-			<img src="assets/Background/Background1-Mobile.jpg" alt="Me" class="img-fluid bgd-m1" width="100%">
-			<div class="me">
-				<p class="display-1">I'm Sayon</p>
-				<p class="display-4-5-1">Engineering Graduate, Software Developer</p>
-			</div>
+		<div id="slide" class="carousel slide" data-ride="carousel">
 
-			<div class="row social-btns">
-				<a href="https://www.linkedin.com/in/sayon-kathirgamanathan/" target="_blank">
-					<img src="assets/Social/Linkedin.png">
-				</a>
-				<a href="https://github.com/sayonk" target="_blank">
-					<img src="assets/Social/Github.png">
-				</a>
-				<a href="assets/Sayon_Kathirgamanathan.pdf" target="_blank">
-					<img src="assets/Social/Resume.png">
-				</a>
-				<a href="mailto:me@sayon.io" target="_blank">
-					<img src="assets/Social/Email.png">
-				</a>
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+		    <li data-target="#slide" data-slide-to="0" class="active"></li>
+		    <li data-target="#slide" data-slide-to="1"></li>
+		    <li data-target="#slide" data-slide-to="2"></li>
+		  </ul>
+
+		  <!-- The slideshow -->
+		  <div class="carousel-inner">
+		    <div class="carousel-item active">
+		      <img src="assets/Carousel/Carousel1.jpg" alt="Me" class="img-fluid" height="auto" id="c1">
+					<div class="carousel-content">
+						<div class="display-1">Dundurn Medical Centre</div>
+					</div>
+					<div class="carousel-caption">
+						<div>
+							<a href="#about" class="btn btn-custom" id="b1">About us</a>
+						</div>
+					</div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="assets/Carousel/Carousel2.jpg" alt="Mountains" class="img-fluid" height="auto" id="c2">
+					<div class="carousel-content">
+						<div class="display-1">Booking</div>
+					</div>
+					<div class="carousel-caption">
+						<div>
+							<a href="booking.html" class="btn btn-custom" id="b2">Book an apointment online</a>
+						</div>
+					</div>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="assets/Carousel/Carousel3.jpg" alt="Chess" class="img-fluid" height="auto" id="c3">
+					<div class="carousel-content">
+						<div class="display-1">Our Doctors</div>
+					</div>
+					<div class="carousel-caption">
+						<div>
+							<a href="#doctors" class="btn btn-custom" id="b3">Meet the team!</a>
+						</div>
+					</div>
+		    </div>
+		  </div>
+
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#slide" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#slide" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+
+		</div>
+
+		<div class="row" id="about">
+			<div class="shadow container-lg p-3 my-3 border bg-custombg2 text-white" data-aos="fade-up">
+				<div class="container-lg p-3 my-3">
+					<div class="display-4">About us</div>
+					<div class="display-7">The Dundurn Medical Centre Inc. operates as a family practice and a walk in clinic in Hamilton, ON</div>
+					<div class="display-8">The Dundurn Medical Centre Inc. is committed to providing high quality, medical care in a clean and friendly environment with added convenience.</div>
+					<div class="display-8" style="margin-bottom: 4vw;">Our clinic provides both Family Practice and Walk-In style medical service where patients can be treated by a qualified health care team. We understand our patients’ needs and treat all with care and respect.</div>
+
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="display-5" style="margin-bottom: 1vw;">Services</div>
+							<u1>
+								<li>Walk-In Medical Clinic</li>
+								<li>Travel Medicine Clinic</li>
+								<li>Sexual Health Clinic</li>
+								<li style="color:#7790ed;">Women’s PAP Clinic</li>
+								<li>Orthotics</li>
+							</u1>
+							<div class="display-7" style="margin-top: 2vw;">Services provided in addition to general practice include:</div>
+							<u1>
+								<li  style="color:#7790ed;">Minor Surgical Procedures (Stitches)</li>
+								<li style="color:#7790ed;">Drivers Physical Exams</li>
+								<li>Family Planning</li>
+								<li>Wart Treatment – Liquid Nitrogen</li>
+								<li style="color:#7790ed;">Weekly PAP & STI Clinic’s</li>
+								<li>Immunization Updates (for patients with no GP)</li>
+								<li style="color:#7790ed;">Pre-op Exams</li>
+								<li>Travel Immunizations</li>
+								<li>Flu Shots/Allergy Shots</li>
+								<li>Orthotics</li>
+								<li>Sexual Health Clinic</li>
+							</u1>
+							<div class="display-7" style="margin-top: 2vw;">Cardiology Consultation and Diagnostic Services</div>
+							<u1>
+								<li style="color:#7790ed;">Cardiac Consultation, Echos, Holters, ECG’s</li>
+							</u1>
+							<div class="display-5" style="margin-bottom: 1vw; margin-top: 2vw;">Policies</div>
+							<u1>
+								<li>Walk in is available (no appointment necessary).</li>
+								<li>Hours are subject to change without notice.</li>
+							</u1>
+							<div class="display-8" style="margin-top: 2vw;">All patients are required to produce a valid Provincial Health Card at the time of each visit, otherwise patients will be required to pay cash at the time of the visit.</div>
+							<div class="display-7">*Highlighted services require an appointment.</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="display-5" style="text-align:center; margin-bottom: 1vw;">Hours of Operation</div>
+							<table class="table text-white">
+								<thead>
+									<tr>
+										<th scope="col" class="display-7">Day</th>
+										<th scope="col"></th>
+										<th scope="col" class="display-7">From</th>
+										<th scope="col" class="display-7">To</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr id="Monday">
+										<th scope="row" class="display-7">Monday</th>
+										<td class="open"></th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Tuesday">
+										<th scope="row" class="display-7">Tuesday</th>
+										<td class="open"></th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Wednesday">
+										<th scope="row" class="display-7">Wednesday</th>
+										<td class="open"></th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Thursday1">
+										<th scope="row" class="display-7">Thursday</th>
+										<td class="open"></th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Friday">
+										<th scope="row" class="display-7">Friday</th>
+										<td class="open"></th>
+										<td class="display-6">9 am</td>
+										<td class="display-6">9 pm</td>
+									</tr>
+									<tr id="Saturday">
+										<th scope="row" class="display-7">Saturday</th>
+										<td class="open"></th>
+										<td class="display-6">10 am</td>
+										<td class="display-6">6 pm</td>
+									</tr>
+									<tr id="Sunday">
+										<th scope="row" class="display-7">Sunday</th>
+										<td class="open"></th>
+										<td class="display-6">10 am</td>
+										<td class="display-6">6 pm</td>
+									</tr>
+								</tbody>
+							</table>
+
+							<div class="display-7">*Holidays: 12:00 PM - 5:00 PM</div>
+							<div class="display-7">*We are open every day of the year except Christmas Day!</div>
+
+							<!--Google map-->
+							<div class="map-responsive" style="margin-top: 1vw; margin-bottom: 1vw;">
+								 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5811.063837395763!2d-79.889257!3d43.261231!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882c9b647a93c3d9%3A0x606b64e93b9a9713!2s50%20Dundurn%20St%20S%2C%20Hamilton%2C%20ON%20L8P%204W3%2C%20Canada!5e0!3m2!1sen!2sus!4v1595704572180!5m2!1sen!2sus"
+									frameborder="0" style="border:0" allowfullscreen=""></iframe>
+							</div>
+							<div class="display-6">Located on the ground floor beside the Fortinos</div>
+							<div class="display-6">Phone number: (905) 529-4040</div>
+							<div class="display-6">Fax number: (905) 529-4494</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div id="projects">
-			<div class="bg-image" data-aos="fade-up">
-				<img src="assets/Background/Background3.jpg" alt="Satellite" class="img-fluid bgd3" width="100%">
-				<img src="assets/Background/Background3-Mobile.jpg" alt="Satellite" class="img-fluid bgd-m3" width="100%">
-				<p class="display-1 satellite">Projects</p>
-
-				<div class="projects">
-					<div id="slide" class="carousel slide" data-interval="false">
-
-						<!-- Indicators -->
-						<ul class="carousel-indicators">
-							<li data-target="#slide" data-slide-to="0" class="active"></li>
-							<li data-target="#slide" data-slide-to="1"></li>
-						</ul>
-
-						<!-- The slideshow -->
-						<div class="carousel-inner">
-
-							<div class="carousel-item active">
-								<img src="assets/Transparent.png" width=70%>
-								<div class="carousel-content">
-									<div class="proj blinking" type="button" onclick="projinfo(this)" id="proj1">
-										<img src="assets/Projects/Games.png" alt="Dundurn" id="pbtn1">
-										<i class="fa fa-info-circle fa-6x overlay" id="pinfo1"></i>
-									</div>
-									<div class="proj" type="button" onclick="projinfo(this)" id="proj2">
-										<img src="assets/Projects/SecretSanta.png" alt="Games" id="pbtn2">
-										<i class="fa fa-info-circle fa-6x overlay" id="pinfo2"></i>
-									</div>
-									<div class="proj" type="button" onclick="projinfo(this)" id="proj3">
-										<img src="assets/Projects/Panam.png" alt="Secret Santa" id="pbtn3">
-										<i class="fa fa-info-circle fa-6x overlay" id="pinfo3"></i>
-									</div>
-									<div class="proj" type="button" onclick="projinfo(this)" id="proj4">
-										<img src="assets/Projects/Website.png" alt="Panam" id="pbtn4">
-										<i class="fa fa-info-circle fa-6x overlay" id="pinfo4"></i>
-									</div>
-								</div>
+		<div class="row" id="doctors">
+			<div class="shadow container-lg p-3 my-3 border bg-custombg2 text-white" data-aos="fade-up">
+				<div class="container-lg p-3 my-3">
+					<div class="display-4">Our Doctors</div>
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="card">
+							  <img class="card-img-top" src="assets/Doctors/Doctor1.jpg" alt="Card image cap">
+								<div class="overlay">
+							    <div class="text">“I love playing defence, that’s what I do and especially when there’s no three in the key it’s going to be like college again, blocking shots left and right.”</div>
+							  </div>
+								<div class="card-body">
+							    <div class="display-9 card-title">Dr. Sim Bhullar</div>
+							    <div class="display-8 card-text">Primary Care Physician</div>
+							  </div>
 							</div>
+						</div>
 
-							<div class="carousel-item">
-								<img src="assets/Transparent.png" width=70%>
-								<div class="carousel-content">
-									<div class="proj" type="button" onclick="projinfo(this)" id="proj5">
-										<img src="assets/Projects/Spotlight.png" alt="Website" id="pbtn5">
-										<i class="fa fa-info-circle fa-6x overlay" id="pinfo5"></i>
-									</div>
-									<div class="proj" type="button" onclick="projinfo(this)" id="proj6">
-										<img src="assets/Projects/Buddi.png" alt="Spotlight" id="pbtn6">
-										<i class="fa fa-info-circle fa-6x overlay" id="pinfo6"></i>
-									</div>
-									<!--
-									<div class="proj" type="button" onclick="projinfo(this)" id="proj6"></div>
-									<div class="proj" type="button" onclick="projinfo(this)" id="proj7">
-										<img src="assets/Projects/Buddi.png" alt="Buddi" id="pbtn7">
-										<i class="fa fa-info-circle fa-6x overlay" id="pinfo7"></i>
-									</div>
-									-->
+						<div class="col-lg-4">
+							<div class="card">
+								<img class="card-img-top" src="assets/Doctors/Doctor2.jpg" alt="Card image cap">
+								<div class="overlay">
+									<div class="text">“Dream as if you’ll live forever, live as if you’ll die today.”</div>
+								</div>
+								<div class="card-body">
+									<div class="display-9 card-title">Dr. Lebron James</div>
+									<div class="display-8 card-text">Cardiologist, PhD.</div>
 								</div>
 							</div>
 						</div>
 
-						<!-- Left and right controls -->
-						<a class="carousel-control-prev" href="#slide" data-slide="prev">
-							<span class="carousel-control-prev-icon"></span>
-						</a>
-						<a class="carousel-control-next" href="#slide" data-slide="next">
-							<span class="carousel-control-next-icon"></span>
-						</a>
-
-					</div>
-				</div>
-				<!--
-				<div class="projects-chosen img-thumbnail" id="pchosen1">
-					<img src="assets/Projects/Dundurn.png" class="logo" alt="Dundurn">
-
-					<div class="name">
-						<p class="display-4-5">Medical Clinic Website</p>
-						<p class="display-5">Web Application</p>
-
-						<img src="assets/Tech/HTML.png" alt="HTML">
-						<img src="assets/Tech/CSS.png" alt="CSS">
-						<img src="assets/Tech/JavaScript.png" alt="JavaScript">
-						<img src="assets/Tech/SQL.png" alt="SQL">
-						<img src="assets/Tech/PHP.png" alt="PHP">
-					</div>
-
-					<p class="display-6 description">
-						• A responsive landing page constructed based on the client’s specifications, using client-side programming technologies such as Bootstrap, jQuery, JavaScript, HTML, and CSS to achieve the desired aesthetic<br>
-						• Utilizes a MySQL database to store user booking data, as well as an email delivery system developed using PHP<br>
-						• Includes an appointment booking form which executes server-side functions when submitted, such as inputting data into the database and sending a post request to access the PHP API
-					</p>
-
-					<a href="https://sayon.io/projects/Medical-Clinic-Website" target="_blank" class="btn btn-clear learn">
-						<i class="fa fa-github"></i>Github
-					</a>
-				</div>
-				-->
-
-				<div class="projects-chosen img-thumbnail" id="pchosen1">
-					<img src="assets/Projects/Games.png" class="logo" alt="Games">
-
-					<div class="name">
-						<p class="display-4-5">Board Game Simulator</p>
-						<p class="display-5">Python Application</p>
-
-						<img src="assets/Tech/Python.png" alt="Python">
-					</div>
-
-					<p class="display-6 description">
-						• A multiplayer board game simulator that utilizes an interface, built using front-end library wxPython, to provide a fluid user experience<br>
-						• Board game rules and alerts are monitored during gameplay by executing code that has implemented back-end programming concepts such as data structures, graph theory, and game theory in Python utilizing a model view controller design pattern<br>
-						• Games can be added in addition to Tic-Tac-Toe, Connect 4, Scrabble, Checkers, and Chess by using a 'Game Rules' library that was built from scratch
-					</p>
-
-					<a href="https://sayon.io/projects/Board-Game-Simulator" target="_blank" class="btn btn-clear learn">
-						<i class="fa fa-github"></i>Github
-					</a>
-				</div>
-
-				<div class="projects-chosen img-thumbnail" id="pchosen2">
-					<img src="assets/Projects/SecretSanta.png" class="logo" alt="Secret Santa">
-
-					<div class="name">
-						<p class="display-4">Secret Santa</p>
-						<p class="display-5">Python Application</p>
-
-						<img src="assets/Tech/Python.png" alt="Python">
-					</div>
-
-					<p class="display-6 description">
-						• Executes an algorithm developed in Python that generates random pairs of participants, with exclusions considered, that results in a continuous chain<br>
-						• Utilizes Python libraries to implement a seeding method to re-simulate random generation<br>
-						• Includes an email delivery system which accesses an SMTP server to automatically send emails to all participants
-					</p>
-
-					<a href="https://sayon.io/projects/Secret-Santa" target="_blank" class="btn btn-clear learn">
-						<i class="fa fa-github"></i>Github
-					</a>
-				</div>
-
-				<div class="projects-chosen img-thumbnail" id="pchosen3">
-					<img src="assets/Projects/Panam.png" class="logo" alt="Panam">
-
-					<div class="name">
-						<p class="display-4-5">Panam Booking Bot</p>
-						<p class="display-5">Python Application</p>
-
-						<img src="assets/Tech/Python.png" alt="Python">
-					</div>
-
-					<p class="display-6 description">
-						• A bot built in Python using Selenium to automate account login and web parsing to automatically book session at the Toronto Panam Centre<br>
-						• Emails results to account owners using Gmail emailing libraries in Python
-					</p>
-
-					<a href="https://sayon.io/projects/Panam-Booking-Bot" target="_blank" class="btn btn-clear learn">
-						<i class="fa fa-github"></i>Github
-					</a>
-				</div>
-
-				<div class="projects-chosen img-thumbnail" id="pchosen4">
-					<img src="assets/Projects/Website.png" class="logo" alt="Website">
-
-					<div class="name">
-						<p class="display-4 desk">Personal Website</p>
-						<p class="display-4-5 mob">Personal Website</p>
-						<p class="display-5">Web Application</p>
-
-						<img src="assets/Tech/HTML.png" alt="HTML">
-						<img src="assets/Tech/CSS.png" alt="CSS">
-						<img src="assets/Tech/JavaScript.png" alt="JavaScript">
-					</div>
-
-					<p class="display-6 description">
-						• A modern one page site constructed using Bootstrap, JavaScript, HTML, and CSS to achieve the desired aesthetic<br>
-						• Includes scrolling and hovering animations to allow the viewer to navigate the page easily<br>
-						• Allows support across various platforms, browsers, and devices
-					</p>
-
-					<a href="https://sayon.io/projects/sayonk.github.io" target="_blank" class="btn btn-clear learn">
-						<i class="fa fa-github"></i>Github
-					</a>
-				</div>
-
-				<div class="projects-chosen img-thumbnail" id="pchosen5">
-					<img src="assets/Projects/Spotlight.png" class="logo" alt="Spotlight">
-
-					<div class="name">
-						<p class="display-4">Spotlight</p>
-						<p class="display-5">Web Application</p>
-
-						<img src="assets/Tech/Java.png" alt="Java">
-						<img src="assets/Tech/HTML.png" alt="HTML">
-						<img src="assets/Tech/CSS.png" alt="CSS">
-						<img src="assets/Tech/JavaScript.png" alt="JavaScript">
-					</div>
-
-					<p class="display-6 description">
-						• HackTO 2022 Project - A Job board for Immigrant Women<br>
-						• Connects Immigrant Women, Employers, and Mentors<br>
-						• Front-end designed using Figma and built using REACT
-						• Hosted on Springboot and AWS Cloud as a REST API
-					</p>
-
-					<a href="https://sayon.io/projects/Spotlight" target="_blank" class="btn btn-clear learn">
-						<i class="fa fa-github"></i>Github
-					</a>
-				</div>
-
-				<div class="projects-chosen img-thumbnail" id="pchosen6">
-					<img src="assets/Projects/Buddi.png" class="logo" alt="Buddi">
-
-					<div class="name">
-						<p class="display-4">Buddi</p>
-						<p class="display-5">Android Application</p>
-
-						<img src="assets/Tech/Android.png" alt="Android">
-						<img src="assets/Tech/Java.png" alt="Java">
-						<img src="assets/Tech/HTML.png" alt="HTML">
-						<img src="assets/Tech/CSS.png" alt="CSS">
-						<img src="assets/Tech/PHP.png" alt="PHP">
-					</div>
-
-					<p class="display-6 description">
-						• A pet and owner matchmaking app built in conjuction with the City of Toronto's Animal Services<br>
-						• Takes user provided information to match with and help get in contact with an adoptable pet<br>
-						• Uses a Laravel-based REST API that the app can interact with through CRUD operations<br>
-						• A web-app also allows users to login in on their desktop
-					</p>
-
-					<a href="https://sayon.io/projects/Buddi" target="_blank" class="btn btn-clear learn">
-						<i class="fa fa-github"></i>Github
-					</a>
-				</div>
-			</div>
-		</div>
-
-		<div id="experience">
-			<div class="bg-image" data-aos="fade-up">
-				<img src="assets/Background/Background4.jpg" alt="Mountains" class="img-fluid bgd4" width="100%">
-				<img src="assets/Background/Background4-Mobile.jpg" alt="Mountains" class="img-fluid bgd-m4" width="100%">
-				<p class="display-1 mountains">Experience</p>
-
-				<div class="experience">
-					<nav>
-						<ul>
-							<div class="exp" type="button" onclick="expinfo(this)" id="exp6">
-								<img src="assets/Experiences/Infosys.png" alt="Infosys" id="ebtn6">
-								<i class="fa fa-info-circle fa-4x overlay" id="einfo6"></i>
+						<div class="col-lg-4">
+							<div class="card">
+								<img class="card-img-top" src="assets/Doctors/Doctor3.jpg" alt="Card image cap">
+								<div class="overlay">
+									<div class="text">“She's been the face of women's college basketball since I was a little girl.”</div>
+								</div>
+								<div class="card-body">
+									<div class="display-9 card-title">Dr. Doris Burke</div>
+									<div class="display-8 card-text">General Practisioner</div>
+								</div>
 							</div>
-							<div class="exp" type="button" onclick="expinfo(this)" id="exp5">
-								<img src="assets/Experiences/OSI.png" alt="OSI" id="ebtn5">
-								<i class="fa fa-info-circle fa-4x overlay" id="einfo5"></i>
-							</div>
-							<div class="exp" type="button" onclick="expinfo(this)" id="exp4">
-								<img src="assets/Experiences/Archos.png" alt="Archos" id="ebtn4">
-								<i class="fa fa-info-circle fa-4x overlay" id="einfo4"></i>
-							</div>
-							<div class="exp" type="button" onclick="expinfo(this)" id="exp1">
-								<img src="assets/Experiences/BLiNQ.png" alt="BLiNQ" id="ebtn1">
-								<i class="fa fa-info-circle fa-4x overlay" id="einfo1"></i>
-							</div>
-							<div class="exp" type="button" onclick="expinfo(this)" id="exp2">
-								<img src="assets/Experiences/Hatch.png" alt="Hatch" id="ebtn2">
-								<i class="fa fa-info-circle fa-4x overlay" id="einfo2"></i>
-							</div>
-							<div class="exp" type="button" onclick="expinfo(this)" id="exp3">
-								<img src="assets/Experiences/SolarCar.png" alt="SolarCar" id="ebtn3">
-								<i class="fa fa-info-circle fa-4x overlay" id="einfo3"></i>
-							</div>
-						</ul>
-					</nav>
-				</div>
-
-				<div class="experience-chosen img-thumbnail" id="echosen1">
-					<img src="assets/Experiences/BLiNQ.png" class="logo" alt="BLiNQ">
-
-					<div class="name">
-						<p class="display-4">Radio Frequency Engineer</p>
-						<p class="display-5">MAY 2020 - AUGUST 2020 | Markham, ON</p>
-
-						<img src="assets/Tech/Python.png" alt="Python">
-						<img src="assets/Tech/Electrical.png" alt="Electrical">
-						<img src="assets/Tech/Solder.png" alt="Solder">
-						<p class="display-6 description">
-							• Developed a desktop interface using wxPython which exponentially reduces the time taken to analyze the production data of radio frequency modules while also displaying graphs and creating a CSV file of the compiled data<br>
-							• Constructed an interactive settings menu which allows engineers to seamlessly start testing for newly added modules by adjusting preferences for data input, analysis, and output<br>
-							• Prepared and presented proposals to a team of engineers consisting of various disciplines which resulted in faster detection of production issues<br>
-							• Tested PCBs using lab equipment such as oscilloscopes, spectrum analyzers, and network analyzers, while finding ways to improve test yield and test time<br>
-							• Executed troubleshooting methods for prototype radio frequency modules such as soldering electrical components<br>
-							• Prepared and presented proposals to a team of engineers consisting of various disciplines which resulted in faster detection of production issues
-						</p>
+						</div>
 					</div>
-				</div>
+					<div class="row" style="margin-top: 2vw;">
+						<div class="col-lg-4">
+							<div class="card">
+								<img class="card-img-top" src="assets/Doctors/Doctor4.jpg" alt="Card image cap">
+								<div class="overlay">
+									<div class="text">“I feel for people with crazy names. It's been a challenge, but if that's my struggle, I can live with it.”</div>
+								</div>
+								<div class="card-body">
+									<div class="display-9 card-title">Dr. Molly Qerim</div>
+									<div class="display-8 card-text">Dermatologist, PhD.</div>
+								</div>
+							</div>
+						</div>
 
-				<div class="experience-chosen img-thumbnail" id="echosen2">
-					<img src="assets/Experiences/Hatch.png" class="logo" alt="Hatch">
+						<div class="col-lg-4">
+							<div class="card">
+								<img class="card-img-top" src="assets/Doctors/Doctor5.jpg" alt="Card image cap">
+								<div class="overlay">
+									<div class="text">“Today I know that there is still work to be done, but along the way I am achieving my dreams.”</div>
+								</div>
+								<div class="card-body">
+									<div class="display-9 card-title">Dr. Candace Parker</div>
+									<div class="display-8 card-text">Pediatrician</div>
+								</div>
+							</div>
+						</div>
 
-					<div class="name">
-						<p class="display-4">Electrical Rail and Transit Engineer</p>
-						<p class="display-5">MAY 2019 - APRIL 2020 | Mississauga, ON</p>
-
-						<img src="assets/Tech/AutoCAD.png" alt="AutoCAD">
-						<img src="assets/Tech/Captivate.png" alt="Electrical">
-						<img src="assets/Tech/Excel.png" alt="Excel">
-						<img src="assets/Tech/Word.png" alt="Word">
-						<img src="assets/Tech/Powerpoint.png" alt="Powerpoint">
-
-						<p class="display-6 description">
-							• Designed training modules using Adobe Captivate by conducting research and coordinating with a team of engineers<br>
-							• Worked on AutoCAD detailed design, drafting, and calculation of safety analysis for the signal systems of various transportation agencies<br>
-							• Actively engaged with various engineering teams to monitor blockers and track the approval and sign off of technical documents which promoted on time delivery<br>
-							• Executed project management duties by retrieving and organizing useful data from databases and assisting team leads with the preparation of technical documents and presentation materials<br>
-							• Provided testing support for commissioning of Canadian Air Transport Security Authority’s Smart Lane security systems
-						</p>
-					</div>
-				</div>
-
-				<div class="experience-chosen img-thumbnail" id="echosen3">
-					<img src="assets/Experiences/SolarCar.png" class="logo" alt="SolarCar">
-
-					<div class="name">
-						<p class="display-4">Electrical (Software) Team Member</p>
-						<p class="display-5">SEPTEMBER 2017 - APRIL 2019 | Hamilton, ON</p>
-
-						<img src="assets/Tech/Arduino.png" alt="Arduino">
-						<img src="assets/Tech/MPLab.png" alt="MPLab">
-						<img src="assets/Tech/C.png" alt="C">
-						<img src="assets/Tech/Electrical.png" alt="Electrical">
-
-						<p class="display-6 description">
-							• Designed and implemented circuits used to activate solar cells to power a project car<br>
-							• Designed a robust monitoring and display system using Arduino
-						</p>
-					</div>
-				</div>
-
-				<div class="experience-chosen img-thumbnail" id="echosen4">
-					<img src="assets/Experiences/Archos.png" class="logo" alt="Archos">
-
-					<div class="name">
-						<p class="display-4">Electrical Designer</p>
-						<p class="display-5">JULY 2021 - FEBRUARY 2022 | Vancouver, BC</p>
-
-						<img src="assets/Tech/AutoCAD.png" alt="AutoCAD">
-						<img src="assets/Tech/Excel.png" alt="Excel">
-						<img src="assets/Tech/Word.png" alt="Word">
-
-						<p class="display-6 description">
-							• Managed multiple projects from design to construction completion resulting in a 25% increase in total revenue<br>
-							• Utilized strong interpersonal skills and the ability to work effectively with others to collaborate with owners, designers, and construction teams with the goal of achieving a vision of the design<br>
-							• Applied a strong understanding of electrical building design to perform engineering design calculations and produce engineered drawings in AutoCAD<br>
-							• Conducted site surveys, reviews, condition surveys and reports independently which eliminated the need for multiple engineers on smaller scale projects<br>
-							• Engaged in personal and business development by proposing, implementing, and optimizing techniques to increase overall productivity
-						</p>
-					</div>
-				</div>
-
-				<div class="experience-chosen img-thumbnail" id="echosen5">
-					<img src="assets/Experiences/OSI.png" class="logo" alt="OSI">
-
-					<div class="name">
-						<p class="display-4">Product Engineer</p>
-						<p class="display-5">MARCH 2022 - JUNE 2022 | Montreal, QC</p>
-
-						<img src="assets/Tech/Python.png" alt="Python">
-						<img src="assets/Tech/Cplusplus.png" alt="C++">
-						<img src="assets/Tech/HTML.png" alt="HTML">
-
-						<p class="display-6 description">
-							• Designed, integrated, tested, and commissioned advanced control systems for electric utilities.<br>
-							• Performed customer training and consulted on power system modeling to ensure the effective use and maintenance of a customer’s power system applications.<br>
-							• Supported live customer systems using knowledge of power systems and OSI application functionality with clear, logical thought processes.
-						</p>
-					</div>
-				</div>
-
-				<div class="experience-chosen img-thumbnail" id="echosen6">
-					<img src="assets/Experiences/Infosys.png" class="logo" alt="Infosys">
-
-					<div class="name">
-						<p class="display-4">Software Developer</p>
-						<p class="display-5">JUNE 2022 - PRESENT | Mississauga, ON</p>
-
-						<img src="assets/Tech/Java.png" alt="Java">
-						<img src="assets/Tech/HTML.png" alt="HTML">
-						<img src="assets/Tech/CSS.png" alt="CSS">
-						<img src="assets/Tech/JavaScript.png" alt="JavaScript">
-						<img src="assets/Tech/SQL.png" alt="SQL">
-
-						<p class="display-6 description">
-							• Trained in the roles of Software Developer in Test (Selenium, SOAPUI, agile software development methodology, CICD) while working with 100+ other developers as part of the Infosys Validation Solution.<br>
-							• Performed functional testing using Java and Selenium to validate 20+ modules such as login, adding/editing payee information on Infosys's Essence Bank application.<br>
-							• Produced a data driven testing solution in automating tasks such as employee details generation (salary, asset date), validation and modification of user input received from employee info data which reduced labour time by over 50%.
-						</p>
+						<div class="col-lg-4">
+							<div class="card">
+								<img class="card-img-top" src="assets/Doctors/Doctor6.jpg" alt="Card image cap">
+								<div class="overlay">
+									<div class="text">“I've got a theory that if you give 100 percent all of the time, somehow things will work out in the end.”</div>
+								</div>
+								<div class="card-body">
+									<div class="display-9 card-title">Dr. Larry Bird</div>
+									<div class="display-8 card-text">Neurologist</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+		<div class="row">
+			<div class="col-md-12 contact">
+				<div class="container-lg p-3 my-3">
+					<div class="row justify-content-md-center">
+						<div class="col-lg-1">
+							<a class="nav-link" href="mailto:sayon.mk@gmail.com" target="_blank" class="right">
+								<i class="fa fa-envelope-o" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="tel:9055294040" class="right">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="tel:9055294494" class="right">
+								<i class="fa fa-fax" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="https://goo.gl/maps/g9mbkMpzp9PYZpiV9" target="_blank" class="right">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="http://www.primacyclinics.ca/locations/dundurn/?fbclid=IwAR0yDOyGioF-Fwdoc9ohmNwsuFzZLKqJ7a8DWYtomNVEce7-EOw9hWZNSQA" target="_blank">
+								<i class="fa fa-globe" aria-hidden="true"></i>
+							</a>
+						</div>
+						<div class="col-lg-1">
+							<a class="nav-link" href="https://www.facebook.com/Dundurn-Medical-Centre-Inc-351745071593063/" target="_blank" class="right">
+								<i class="fa fa-facebook-square" aria-hidden="true"></i>
+							</a>
+						</div>
+					</div>
+					<div class="row justify-content-md-center" style="margin-top: 2vw;">
+						<div class="display-11">Dundurn &copy; 2021 All Rights Reserved</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/dundurn.js"></script>
 		<script src="js/aos.js"></script>
 	</body>
 </html>
